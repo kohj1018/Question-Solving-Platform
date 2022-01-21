@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+mureobang_front/node_modules
+mureobang_front/.pnp
+mureobang_front/.pnp.js
+
+# testing
+mureobang_front/coverage
+
+# production
+mureobang_front/build
+
+# misc
+mureobang_front/*.DS_Store
+mureobang_front/*.env.local
+mureobang_front/*.env.development.local
+mureobang_front/*.env.test.local
+mureobang_front/*.env.production.local
+
+mureobang_front/npm-debug.log*
+mureobang_front/yarn-debug.log*
+mureobang_front/yarn-error.log*
+
+# my custom
+.idea

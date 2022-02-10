@@ -26,7 +26,8 @@ const NavBar = () => {
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="/sign-in">로그인</NavBtnLink>
+          <NavBtnLink to="/sign-in" backgroundcolor="#fff" fontcolor="#000">로그인</NavBtnLink>
+          <NavBtnLink to="/sign-up" backgroundcolor="#000" fontcolor="#fff">회원가입</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

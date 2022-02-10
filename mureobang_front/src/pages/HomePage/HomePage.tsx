@@ -1,10 +1,17 @@
 import React from 'react';
+import {PageContainer} from "../../styles/frequentStyles";
+import {LeftArea, MainFlex, RightSideFlex} from "./homePageStyles";
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <PageContainer>
+      <MainFlex>
+        <LeftArea></LeftArea>
+        <RightSideFlex>
+
+        </RightSideFlex>
+      </MainFlex>
+    </PageContainer>
   );
 };
 

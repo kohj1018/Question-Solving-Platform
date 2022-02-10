@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: flex-start;
-  padding: 0.5rem 5vw;
+  padding: 0.5rem 5.5vw;
   z-index: 10;
 `
 
@@ -34,7 +34,7 @@ export const Bars = styled(FaBars)`
   display: none;
   color: #000;
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 950px) {
     display: block;
     position: absolute;
     top: 0;
@@ -52,7 +52,7 @@ export const NavMenu = styled.div`
   white-space: nowrap;
   gap: 3vw;
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 950px) {
     display: none;
   }
 `
@@ -60,29 +60,27 @@ export const NavMenu = styled.div`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  margin-right: 24px;
   justify-content: flex-end;
   width: 100vw;
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 950px) {
     display: none;
   }
 `
 
-export const NavBtnLink = styled(Link)`
+interface NavBtnColorProps {
+  backgroundcolor: string;
+  fontcolor: string;
+}
+
+export const NavBtnLink = styled(Link)<NavBtnColorProps>`
   border-radius: 4px;
-  background: #256ce1;
+  background: ${props => props.backgroundcolor};
+  color: ${props => props.fontcolor};
   padding: 10px 22px;
-  color: #000;
-  border: none;
+  border: 1px solid black;
   outline: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
   text-decoration: none;
-  
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #000;
-    color: #010606;
-  }
+  margin-right: 16px;
 `

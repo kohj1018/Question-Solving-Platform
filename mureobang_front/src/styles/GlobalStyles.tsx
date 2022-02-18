@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components";
-import reset from 'styled-reset';
 
 const GlobalStyles = createGlobalStyle`
-  ${reset}
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; // 기본 폰트 10px
   }
   ul, ol, li {
     list-style: none;

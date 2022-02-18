@@ -8,7 +8,7 @@ const NavBar = () => {
     <>
       <Nav>
         <NavLink to="/">
-          <img src={require('../../assets/images/logo.png')} alt="logo"/>
+          <img src="assets/img/logo.png" alt="logo"/>
         </NavLink>
         <Bars/>
         <NavMenu>

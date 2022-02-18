@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import {device, sizeManager} from "../../styles/mediaQueryStyles";
+import {fontSize} from "../../styles/fontStyles";
 
 export const Nav = styled.nav`
   background: #fff;
-  height: 80px;
+  height: 13vh;
   display: flex;
   justify-content: flex-start;
-  padding: 0.5rem 5.5vw;
+  align-items: center;
+  padding: 0 calc((100vw - ${sizeManager.pcGlobalWidth}) / 2);
   z-index: 10;
 `
 
@@ -19,10 +22,14 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-size: ${fontSize.normal};
   
+  :first-child {
+    padding: 0;
+  }
   img {
-    height: 70%;
     width: 104px;
+    height: 45px;
   }
   
   &.active {
@@ -34,7 +41,7 @@ export const Bars = styled(FaBars)`
   display: none;
   color: #000;
   
-  @media screen and (max-width: 950px) {
+  @media screen and ${device.tablet} {
     display: block;
     position: absolute;
     top: 0;
@@ -52,7 +59,7 @@ export const NavMenu = styled.div`
   white-space: nowrap;
   gap: 3vw;
   
-  @media screen and (max-width: 950px) {
+  @media screen and ${device.tablet} {
     display: none;
   }
 `
@@ -63,7 +70,7 @@ export const NavBtn = styled.nav`
   justify-content: flex-end;
   width: 100vw;
   
-  @media screen and (max-width: 950px) {
+  @media screen and ${device.tablet} {
     display: none;
   }
 `
@@ -83,4 +90,9 @@ export const NavBtnLink = styled(Link)<NavBtnColorProps>`
   cursor: pointer;
   text-decoration: none;
   margin-right: 16px;
+  font-size: ${fontSize.normal};
+  
+  :last-child {
+    margin-right: 0;
+  }
 `

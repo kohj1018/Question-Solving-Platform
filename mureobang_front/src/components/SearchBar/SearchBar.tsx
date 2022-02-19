@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {SearchBarContainer, SearchBtn, SearchTextField} from "./SearchBarStyles";
+import {SearchBarContainer, SearchBtn, SearchTextField} from "./searchBarStyles";
 import SearchIcon from '@mui/icons-material/Search';
 import {fontSize} from "../../styles/fontStyles";
 

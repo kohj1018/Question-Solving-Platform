@@ -57,7 +57,7 @@ export const AskQuestionBtn = styled(Link)`
   height: 85px;
   background-color: #fff;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,7 +69,7 @@ export const QuestionsPageBtnContainer = styled.div`
   width: 100%;
   height: 425px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 30px;
   
   display: grid;
   grid-template-columns: 207px 207px;
@@ -111,8 +111,8 @@ export const QuestionsPageBtnContainer = styled.div`
   
   .questionsCon .icon {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 24px;
+    bottom: 16px;
   }
 `
 
@@ -121,10 +121,10 @@ export const QuestionsPageLink = styled(Link)`
   height: 100%;
   margin: auto;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 30px;
   border: 1px solid #DEDEDE;
   color: black;
   font-size: ${fontSize.small};
   font-weight: bold;
-  padding: 12px;
+  padding: 16px 24px;
 `

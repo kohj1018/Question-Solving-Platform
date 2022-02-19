@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink as Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import {device, sizeManager} from "../../styles/mediaQueryStyles";
 import {fontSize} from "../../styles/fontStyles";
@@ -14,26 +14,22 @@ export const Nav = styled.nav`
   z-index: 10;
 `
 
-export const NavLink = styled(Link)`
+export const NavSLink = styled(NavLink)`
   color: #000;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
   cursor: pointer;
   font-size: ${fontSize.normal};
+  font-weight: bold;
+  padding: 12px 0;
   
-  :first-child {
-    padding: 0;
-  }
   img {
     width: 104px;
     height: 45px;
   }
   
   &.active {
-    color: #15cdfc;
+    border-bottom: 3.5px solid black;
   }
 `
 
@@ -57,7 +53,7 @@ export const NavMenu = styled.div`
   align-items: center;
   width: 100vw;
   white-space: nowrap;
-  gap: 3vw;
+  gap: 4.7vw;
   
   @media screen and ${device.tablet} {
     display: none;
@@ -80,17 +76,18 @@ interface NavBtnColorProps {
   fontcolor: string;
 }
 
-export const NavBtnLink = styled(Link)<NavBtnColorProps>`
-  border-radius: 4px;
+export const NavBtnLink = styled(NavLink)<NavBtnColorProps>`
+  border-radius: 10px;
   background: ${props => props.backgroundcolor};
   color: ${props => props.fontcolor};
   padding: 10px 22px;
-  border: 1px solid black;
+  border: 2px solid black;
   outline: none;
   cursor: pointer;
   text-decoration: none;
   margin-right: 16px;
   font-size: ${fontSize.normal};
+  font-weight: bold;
   
   :last-child {
     margin-right: 0;

@@ -1,10 +1,12 @@
 import React from 'react';
+import {PageContainer} from "../../styles/frequentStyles";
+import SideBar from "../../components/SideBar/SideBar";
 
 const QuestionsPage = () => {
   return (
-    <div>
-      <h1>학과질문</h1>
-    </div>
+    <PageContainer>
+      <SideBar/>
+    </PageContainer>
   );
 };
 

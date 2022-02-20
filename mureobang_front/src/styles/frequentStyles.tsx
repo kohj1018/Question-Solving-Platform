@@ -8,3 +8,21 @@ export const PageContainer = styled.div`
   width: 100%;
   margin: 0 auto;
 `
+
+export const LeftSideContainer = styled.div`
+  width: 193px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  left: 0;
+`
+
+export const MainContainer = styled.div`
+  width: 954px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+`

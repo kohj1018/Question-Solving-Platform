@@ -19,6 +19,7 @@ const HomePage = () => {
   return (
     <PageContainer>
       <MainFlex>
+
         <LeftAreaFlex>
           <MainTextArea>
             <Typography fontSize="56px" fontWeight="bold" lineHeight="80px">혼자하기 어려웠던<br/>전공 공부,</Typography>
@@ -28,6 +29,7 @@ const HomePage = () => {
             <img src="assets/img/main.png" alt="메인이미지"/>
           </MainImgArea>
         </LeftAreaFlex>
+
         <RightSideFlex>
           <SearchBar/>
           <AskQuestionBtn to="">
@@ -57,6 +59,7 @@ const HomePage = () => {
 
           </QuestionsPageBtnContainer>
         </RightSideFlex>
+
       </MainFlex>
     </PageContainer>
   );

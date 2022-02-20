@@ -3,9 +3,7 @@ import {NavLink} from "react-router-dom";
 import {fontSize} from "../../styles/fontStyles";
 
 export const SideBarContainer = styled.nav`
-  position: absolute;
-  top: 40px;
-  left: 0;
+  width: 193px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

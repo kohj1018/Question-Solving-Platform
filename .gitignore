@@ -10,6 +10,7 @@ mureobang_front/coverage
 
 # production
 mureobang_front/build
+mureobang_front/.firebase
 
 # misc
 mureobang_front/*.DS_Store

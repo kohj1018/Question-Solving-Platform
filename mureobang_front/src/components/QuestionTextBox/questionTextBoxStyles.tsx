@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 
-export const QuestionLinkContainer = styled(Link)`
+export const QuestionTextBoxLink = styled(Link)`
   width: 302px;
   height: 232px;
   background-color: #fff;
@@ -16,4 +16,11 @@ export const QuestionLinkContainer = styled(Link)`
     right: 30px;
     bottom: 32px;
   }
+`
+
+export const TextFlex = styled.div`
+  width: 100%;
+  height: 136px;
+  flex-direction: column;
+  justify-content: space-between;
 `

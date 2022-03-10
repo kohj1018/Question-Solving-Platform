@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {sizeManager} from "./mediaQueryStyles";
+import {Pagination} from "@mui/material";
 
 //margin: 2vh calc((100vw - (${sizeManager.pcGlobalWidth} + 20px)) / 2);
 // 페이지 컨테이너
@@ -36,6 +37,8 @@ interface departmentTagProps {
 }
 // 학과 태그
 export const DepartmentTag = styled.div<departmentTagProps>`
+  width: 110px;
+  height: 32px;
   color: ${props => props.color};
   background-color: ${props => props.bgColor};
   padding: 4px 16px;
@@ -44,4 +47,39 @@ export const DepartmentTag = styled.div<departmentTagProps>`
   line-height: 24px;
   text-align: center;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+`
+
+// 페이지네이션 커스텀
+export const CustomPagination = styled(Pagination)`
+  width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  ul {
+    width: 549px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+`
+
+interface bookmarkBtnProps {
+  width: string;
+  height: string;
+}
+// bookmark Icon Btn
+export const BookmarkBtn = styled.div<bookmarkBtnProps>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 5;
+  img {
+    width: ${props => props.width};
+    height: ${props => props.height};
+    text-align: center;
+  }
 `

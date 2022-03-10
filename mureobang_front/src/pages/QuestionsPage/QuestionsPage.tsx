@@ -1,9 +1,15 @@
 import React from 'react';
-import {LeftSideContainer, MainContainer, PageContainer} from "../../styles/frequentStyles";
+import {CustomPagination, LeftSideContainer, MainContainer, PageContainer} from "../../styles/frequentStyles";
 import SideBar from "../../components/SideBar/SideBar";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import {Typography} from "@mui/material";
-import {QuestionMainBoxContainer, QuestionTextBoxContainer} from "./questionsPageStyles";
+import {
+  FilterBtn, QuestionBtn,
+  QuestionCheckBtnFlex,
+  QuestionCheckHeadFlex,
+  QuestionMainBoxContainer,
+  QuestionTextBoxContainer
+} from "./questionsPageStyles";
 import QuestionTextBox from "../../components/QuestionTextBox/QuestionTextBox";
 import QuestionMainBox from "../../components/QuestionMainBox/QuestionMainBox";
 
@@ -28,16 +34,29 @@ const QuestionsPage = () => {
         </QuestionTextBoxContainer>
 
         {/* 모든 질문 확인하기 */}
-        <Typography fontSize="20px" fontWeight="bold" lineHeight="24px" style={{margin: '48px 0 40px'}}>모든 질문 확인하기 ✅</Typography>
+        <QuestionCheckHeadFlex>
+          <Typography fontSize="20px" fontWeight="bold" lineHeight="24px" style={{display: 'inline', top: '0', left: '0'}}>모든 질문 확인하기 ✅</Typography>
+          <QuestionCheckBtnFlex>
+            <FilterBtn>
+              <img src="assets/img/icon_filter.svg"/>
+              필터
+            </FilterBtn>
+            <QuestionBtn>
+              나도 질문하기
+            </QuestionBtn>
+          </QuestionCheckBtnFlex>
+        </QuestionCheckHeadFlex>
         <QuestionMainBoxContainer>
-          <QuestionMainBox/>
-          <QuestionMainBox/>
-          <QuestionMainBox/>
-          <QuestionMainBox/>
-          <QuestionMainBox/>
-          <QuestionMainBox/>
-          <QuestionMainBox/>
+          <QuestionMainBox id="01"/>
+          <QuestionMainBox id="02"/>
+          <QuestionMainBox id="03"/>
         </QuestionMainBoxContainer>
+        <CustomPagination
+          count={10}
+          size="large"
+          showFirstButton showLastButton
+          style={{marginBottom: '266px'}}
+        />
 
       </MainContainer>
     </PageContainer>

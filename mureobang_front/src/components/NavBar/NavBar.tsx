@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, NavSLink, Bars, NavMenu, NavBtn, NavBtnLink } from './navBarStyles';
+import logo from '@img/logo.png';
 
 const NavBar = () => {
 
@@ -7,7 +8,7 @@ const NavBar = () => {
   return (
     <Nav>
       <NavSLink to="/" style={{borderBottom: 'none', padding: '0'}}>
-        <img src="assets/img/logo.png" alt="logo"/>
+        <img src={logo} alt="logo"/>
       </NavSLink>
       <Bars/>
       <NavMenu>

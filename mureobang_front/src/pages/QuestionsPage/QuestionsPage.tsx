@@ -1,7 +1,7 @@
 import React from 'react';
-import {CustomPagination, LeftSideContainer, MainContainer, PageContainer} from "../../styles/frequentStyles";
-import SideBar from "../../components/SideBar/SideBar";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import {CustomPagination, LeftSideContainer, MainContainer, PageContainer} from "@styles/frequentStyles";
+import SideBar from "@components/SideBar/SideBar";
+import SearchBar from "@components/SearchBar/SearchBar";
 import {Typography} from "@mui/material";
 import {
   FilterBtn, QuestionBtn,
@@ -10,8 +10,8 @@ import {
   QuestionMainBoxContainer,
   QuestionTextBoxContainer
 } from "./questionsPageStyles";
-import QuestionTextBox from "../../components/QuestionTextBox/QuestionTextBox";
-import QuestionMainBox from "../../components/QuestionMainBox/QuestionMainBox";
+import QuestionTextBox from "@components/QuestionTextBox/QuestionTextBox";
+import QuestionMainBox from "@components/QuestionMainBox/QuestionMainBox";
 
 const QuestionsPage = () => {
   return (
@@ -38,7 +38,7 @@ const QuestionsPage = () => {
           <Typography fontSize="20px" fontWeight="bold" lineHeight="24px" style={{display: 'inline', top: '0', left: '0'}}>모든 질문 확인하기 ✅</Typography>
           <QuestionCheckBtnFlex>
             <FilterBtn>
-              <img src="assets/img/icon_filter.svg"/>
+              <img src={require("@img/icon_filter.svg").default} alt="필터"/>
               필터
             </FilterBtn>
             <QuestionBtn>

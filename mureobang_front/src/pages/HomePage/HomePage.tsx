@@ -1,5 +1,5 @@
 import React from 'react';
-import {PageContainer} from "../../styles/frequentStyles";
+import {PageContainer} from "@styles/frequentStyles";
 import {
   LeftAreaFlex,
   MainTextArea,
@@ -10,9 +10,13 @@ import {
   QuestionsPageLink, MainImgArea
 } from "./homePageStyles";
 import {Typography} from "@mui/material";
-import SearchBar from "../../components/SearchBar/SearchBar";
-import {fontSize} from "../../styles/fontStyles";
+import SearchBar from "@components/SearchBar/SearchBar";
+import {fontSize} from "@styles/fontStyles";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import main from '@img/main.png';
+import major from "@img/major.png";
+import minor from "@img/minor.png";
+import geclass from "@img/geclass.png";
 
 
 const HomePage = () => {
@@ -26,7 +30,7 @@ const HomePage = () => {
             <Typography fontSize="32px" lineHeight="48px">이제 물어방과 함께하세요.</Typography>
           </MainTextArea>
           <MainImgArea>
-            <img src="assets/img/main.png" alt="메인이미지"/>
+            <img src={main} alt="메인이미지"/>
           </MainImgArea>
         </LeftAreaFlex>
 
@@ -41,19 +45,19 @@ const HomePage = () => {
 
             <QuestionsPageLink className="questionsCon" to="">
               <Typography fontSize={`${fontSize.small}`} fontWeight="bold">전공</Typography>
-              <img src="assets/img/major.png" alt="전공"/>
+              <img src={major} alt="전공"/>
               <ArrowForwardIcon className="icon" fontSize="large"/>
             </QuestionsPageLink>
 
             <QuestionsPageLink className="questionsCon" to="">
               <Typography fontSize={`${fontSize.small}`} fontWeight="bold">관심전공</Typography>
-              <img src="assets/img/minor.png" alt="관심전공"/>
+              <img src={minor} alt="관심전공"/>
               <ArrowForwardIcon className="icon" fontSize="large"/>
             </QuestionsPageLink>
 
             <QuestionsPageLink className="questionsCon" to="">
               <Typography fontSize={`${fontSize.small}`} fontWeight="bold">교양과목</Typography>
-              <img src="assets/img/geclass.png" alt="교양과목"/>
+              <img src={geclass} alt="교양과목"/>
               <ArrowForwardIcon className="icon" fontSize="large"/>
             </QuestionsPageLink>
 

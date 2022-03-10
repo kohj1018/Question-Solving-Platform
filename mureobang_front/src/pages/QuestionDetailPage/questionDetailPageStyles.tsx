@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {DepartmentTag} from "@styles/frequentStyles";
-import {IconButton} from "@mui/material";
 
 export const CustomDepartmentTag = styled(DepartmentTag)`
   margin-top: 48px;

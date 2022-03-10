@@ -1,5 +1,5 @@
 import React from 'react';
-import {QuestionTextBoxLink, TextFlex} from "./questionTextBoxStyles";
+import {QuestionTextBoxLink} from "./questionTextBoxStyles";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import {Typography} from "@mui/material";
 

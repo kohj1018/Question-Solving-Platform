@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {SearchBarContainer, SearchBtn, SearchTextField} from "./searchBarStyles";
 import SearchIcon from '@mui/icons-material/Search';
-import {fontSize} from "../../styles/fontStyles";
+import {fontSize} from "@styles/fontStyles";
 
 const SearchBar = () => {
   const [text, setText] = useState<string>('');

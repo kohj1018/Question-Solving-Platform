@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import {BookmarkBtn, MainContainer, PageContainer} from "@styles/frequentStyles";
 import {SideBarContainer} from "@components/SideBar/sideBarStyles";
-import SideBar from "../../components/SideBar/SideBar";
-import SearchBar from "../../components/SearchBar/SearchBar";
+import SideBar from "@components/SideBar/SideBar";
+import SearchBar from "@components/SearchBar/SearchBar";
 import {useParams} from "react-router-dom";
 import {AuthContext} from "@context/AuthContext";
 import {CustomDepartmentTag, TextHeaderFlex} from "./questionDetailPageStyles";

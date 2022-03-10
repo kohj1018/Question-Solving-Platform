@@ -7,8 +7,7 @@ import {
   TextFlex,
   QuestionInfoTextFlex
 } from "./questionMainBoxStyles";
-import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
-import {tagColor1} from "../../styles/color/tagColor";
+import {tagColor1} from "@styles/color/tagColor";
 import {Typography} from "@mui/material";
 
 interface QuestionMainBoxProps {
@@ -40,7 +39,7 @@ const QuestionMainBox = ({ id }: QuestionMainBoxProps) => {
       <BookmarkFlex>
         <p>12</p>
         <BookmarkBtn onClick={(e) => bookmarkHandler(e)}>
-          <BookmarkBorderIcon fontSize="large"/>
+          <img src={require("@img/icon_bookmark.svg").default} alt="나도 궁금해요"/>
         </BookmarkBtn>
       </BookmarkFlex>
     </QuestionMainBoxLink>

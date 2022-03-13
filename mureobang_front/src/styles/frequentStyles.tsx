@@ -70,12 +70,12 @@ export const CustomPagination = styled(Pagination)`
   }
 `
 
-interface bookmarkBtnProps {
+interface iconBtnProps {
   width: string;
   height: string;
 }
-// bookmark Icon Btn
-export const BookmarkBtn = styled(IconButton)<bookmarkBtnProps>`
+// Custom Icon Btn
+export const IconBtn = styled(IconButton)<iconBtnProps>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,4 +114,21 @@ export const QuestionInfoFlex = styled.div<questionInfoFlexProps>`
       color: #3E73FF;
     }
   }
+`
+
+interface postTagProps {
+  bgColor: string;
+  fontColor: string;
+}
+// 글 태그
+export const PostTag = styled.div<postTagProps>`
+  height: 32px;
+  border: 2px solid ${props => props.fontColor};
+  border-radius: 30px;
+  color: ${props => props.fontColor};
+  background-color: ${props => props.bgColor};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 16px;
 `

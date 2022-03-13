@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {BookmarkBtn, MainContainer, PageContainer, QuestionInfoFlex} from "@styles/frequentStyles";
+import {IconBtn, MainContainer, PageContainer, QuestionInfoFlex} from "@styles/frequentStyles";
 import {SideBarContainer} from "@components/SideBar/sideBarStyles";
 import SideBar from "@components/SideBar/SideBar";
 import SearchBar from "@components/SearchBar/SearchBar";
@@ -28,9 +28,9 @@ const QuestionDetailPage = () => {
         {/* 질문 영역 */}
         <CustomDepartmentTag bgColor="#CA5AFF" color="#fff">수업종류</CustomDepartmentTag>
         <QuestionHeaderFlex>
-          <BookmarkBtn width="23px" height="23px">
+          <IconBtn width="23px" height="23px">
             <img src={require("@img/icon_bookmark.svg").default} alt="나도 궁금해요"/>
-          </BookmarkBtn>
+          </IconBtn>
           <Typography fontSize={`${fontSize.big}`} fontWeight="bold">디미디는 취업 어디로 하나요?</Typography>
         </QuestionHeaderFlex>
         <QuestionMainText>

@@ -7,7 +7,7 @@ import {
 } from "./questionMainBoxStyles";
 import {tagColor1} from "@styles/color/tagColor";
 import {Typography} from "@mui/material";
-import {BookmarkBtn, QuestionInfoFlex} from "@styles/frequentStyles";
+import {IconBtn, QuestionInfoFlex} from "@styles/frequentStyles";
 import {fontLineHeight, fontSize, fontWeight} from "@styles/fontStyles";
 
 interface QuestionMainBoxProps {
@@ -38,9 +38,9 @@ const QuestionMainBox = ({ id }: QuestionMainBoxProps) => {
       <CustomDepartmentTag bgColor={tagColor1} color="#fff">수업종류서지윤바보서지윤바보ㅇㅁㄴㄹㅇ넘리ㅏㅇ너ㅏㅣ러아ㅣㅁ너ㅏㄹㅇ너ㅣ</CustomDepartmentTag>
       <BookmarkFlex>
         <p>12</p>
-        <BookmarkBtn width="18px" height="18px" onClick={(e) => bookmarkHandler(e)}>
+        <IconBtn width="18px" height="18px" onClick={(e) => bookmarkHandler(e)}>
           <img src={require("@img/icon_bookmark.svg").default} alt="나도 궁금해요"/>
-        </BookmarkBtn>
+        </IconBtn>
       </BookmarkFlex>
     </QuestionMainBoxLink>
   );

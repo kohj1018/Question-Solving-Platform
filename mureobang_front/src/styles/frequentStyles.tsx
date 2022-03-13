@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {sizeManager} from "./mediaQueryStyles";
-import {Pagination} from "@mui/material";
+import {IconButton, Pagination} from "@mui/material";
+import {fontLineHeight, fontSize, fontWeight} from "@styles/fontStyles";
 
 //margin: 2vh calc((100vw - (${sizeManager.pcGlobalWidth} + 20px)) / 2);
 // 페이지 컨테이너
@@ -43,9 +44,12 @@ export const DepartmentTag = styled.div<departmentTagProps>`
   background-color: ${props => props.bgColor};
   padding: 4px 16px;
   border-radius: 30px;
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
+  font-size: ${fontSize.BT};
+  line-height: ${fontLineHeight.BT};
+  font-weight: ${fontWeight.BT};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
 `
 
@@ -71,15 +75,43 @@ interface bookmarkBtnProps {
   height: string;
 }
 // bookmark Icon Btn
-export const BookmarkBtn = styled.div<bookmarkBtnProps>`
+export const BookmarkBtn = styled(IconButton)<bookmarkBtnProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  padding: 0 !important;
   z-index: 5;
+  
   img {
     width: ${props => props.width};
     height: ${props => props.height};
+  }
+`
+
+interface questionInfoFlexProps {
+  textAlign: string;
+}
+// 질문글 정보 컨테이너
+export const QuestionInfoFlex = styled.div<questionInfoFlexProps>`
+  width: 100%;
+  height: 24px;
+  text-align: ${props => props.textAlign};
+  
+  p {
+    display: inline;
+    font-size: ${fontSize.Text3};
+    line-height: ${fontLineHeight.Text3};
+    font-weight: ${fontWeight.Text3};
+    padding-right: 10px;
+    border-right: 2px solid #A5A6B0;
+    color: #A5A6B0;
     text-align: center;
+
+    :last-child {
+      padding-left: 10px;
+      padding-right: 0;
+      border-right: none;
+      color: #3E73FF;
+    }
   }
 `

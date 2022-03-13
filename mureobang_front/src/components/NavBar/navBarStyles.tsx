@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import {device, sizeManager} from "../../styles/mediaQueryStyles";
-import {fontSize} from "../../styles/fontStyles";
+import {fontLineHeight, fontSize, fontWeight} from "../../styles/fontStyles";
 
 export const Nav = styled.nav`
   background: #fff;
@@ -19,8 +19,9 @@ export const NavSLink = styled(NavLink)`
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: ${fontSize.normal};
-  font-weight: bold;
+  font-size: ${fontSize.HT};
+  line-height: ${fontLineHeight.HT};
+  font-weight: ${fontWeight.HT};
   padding: 12px 0;
   
   img {
@@ -86,8 +87,9 @@ export const NavBtnLink = styled(NavLink)<NavBtnColorProps>`
   cursor: pointer;
   text-decoration: none;
   margin-right: 16px;
-  font-size: ${fontSize.normal};
-  font-weight: bold;
+  font-size: ${fontSize.BT};
+  line-height: ${fontLineHeight.BT};
+  font-weight: ${fontWeight.BT};
   
   :last-child {
     margin-right: 0;

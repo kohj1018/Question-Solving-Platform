@@ -12,6 +12,7 @@ import {
 } from "./questionsPageStyles";
 import QuestionTextBox from "@components/QuestionTextBox/QuestionTextBox";
 import QuestionMainBox from "@components/QuestionMainBox/QuestionMainBox";
+import {fontLineHeight, fontSize, fontWeight} from "@styles/fontStyles";
 
 const QuestionsPage = () => {
   return (
@@ -26,7 +27,7 @@ const QuestionsPage = () => {
         <SearchBar/>
 
         {/* 지금 가장 활발한 글 */}
-        <Typography fontSize="20px" fontWeight="bold" lineHeight="24px" style={{margin: '40px 0'}}>지금 가장 활발한 글 ✍</Typography>
+        <Typography fontSize={fontSize.H4} lineHeight={fontLineHeight.H4} fontWeight={fontWeight.H4} style={{margin: '40px 0'}}>지금 가장 활발한 글 ✍</Typography>
         <QuestionTextBoxContainer>
           <QuestionTextBox/>
           <QuestionTextBox/>
@@ -35,7 +36,7 @@ const QuestionsPage = () => {
 
         {/* 모든 질문 확인하기 */}
         <QuestionCheckHeadFlex>
-          <Typography fontSize="20px" fontWeight="bold" lineHeight="24px" style={{display: 'inline', top: '0', left: '0'}}>모든 질문 확인하기 ✅</Typography>
+          <Typography fontSize={fontSize.H4} lineHeight={fontLineHeight.H4} fontWeight={fontWeight.H4} style={{display: 'inline', top: '0', left: '0'}}>모든 질문 확인하기 ✅</Typography>
           <QuestionCheckBtnFlex>
             <FilterBtn>
               <img src={require("@img/icon_filter.svg").default} alt="필터"/>

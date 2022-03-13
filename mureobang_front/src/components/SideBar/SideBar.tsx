@@ -1,6 +1,7 @@
 import React from 'react';
 import {MenuList, NavSLink, SideBarContainer} from "./sideBarStyles";
 import {Typography} from "@mui/material";
+import {fontLineHeight, fontSize, fontWeight} from "@styles/fontStyles";
 
 const 임시메뉴 = {
   전공: [{
@@ -20,25 +21,25 @@ const 임시메뉴 = {
 const SideBar = () => {
   return (
     <SideBarContainer>
-      <Typography fontSize="24px" fontWeight="bold" lineHeight="40px">전공</Typography>
+      <Typography fontSize={fontSize.H4} lineHeight={fontLineHeight.H4} fontWeight={fontWeight.H4}>전공</Typography>
       <MenuList>
         {임시메뉴.전공.map(menu => {
           return (
-            <Typography fontSize="16px" lineHeight="24px">• <NavSLink to={menu.path}>{menu.전공이름}</NavSLink></Typography>
+            <Typography fontSize={fontSize.Text1} lineHeight={fontLineHeight.Text1} fontWeight={fontWeight.Text1}>• <NavSLink to={menu.path}>{menu.전공이름}</NavSLink></Typography>
           )
         })}
       </MenuList>
 
-      <Typography fontSize="24px" fontWeight="bold" lineHeight="40px">관심전공</Typography>
+      <Typography fontSize={fontSize.H4} lineHeight={fontLineHeight.H4} fontWeight={fontWeight.H4}>관심전공</Typography>
       <MenuList>
         {임시메뉴.관심전공.map(menu => {
           return (
-            <Typography fontSize="16px" lineHeight="24px">• <NavSLink to={menu.path}>{menu.전공이름}</NavSLink></Typography>
+            <Typography fontSize={fontSize.Text1} lineHeight={fontLineHeight.Text1} fontWeight={fontWeight.Text1}>• <NavSLink to={menu.path}>{menu.전공이름}</NavSLink></Typography>
           )
         })}
       </MenuList>
 
-      <Typography fontSize="16px" lineHeight="24px">• <NavSLink to="/">교양과목</NavSLink></Typography>
+      <Typography fontSize={fontSize.Text1} lineHeight={fontLineHeight.Text1} fontWeight={fontWeight.Text1}>• <NavSLink to="/">교양과목</NavSLink></Typography>
 
     </SideBarContainer>
   );

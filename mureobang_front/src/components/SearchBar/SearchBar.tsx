@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {SearchBarContainer, SearchBtn, SearchTextField} from "./searchBarStyles";
 import SearchIcon from '@mui/icons-material/Search';
-import {fontSize} from "@styles/fontStyles";
+import {fontLineHeight, fontSize, fontWeight} from "@styles/fontStyles";
 
 const SearchBar = () => {
   const [text, setText] = useState<string>('');
@@ -24,7 +24,7 @@ const SearchBar = () => {
       </SearchBtn>
       <SearchTextField
         placeholder="묻고 싶은 질문을 검색해 보세요."
-        style={{fontSize: `${fontSize.normal}`}}
+        style={{fontSize: `${fontSize.Search}`, lineHeight: `${fontLineHeight.Search}`, fontWeight: `${fontWeight.Search}`}}
         onChange={onChange}
       />
     </SearchBarContainer>

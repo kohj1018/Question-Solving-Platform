@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {fontLineHeight, fontSize, fontWeight} from "@styles/fontStyles";
 
 export const QuestionTextBoxContainer = styled.div`
   display: flex;
@@ -41,8 +42,9 @@ export const FilterBtn = styled.div`
   background: #fff;
   box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.07);
   border-radius: 100px;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: ${fontSize.BT};
+  line-height: ${fontLineHeight.BT};
+  font-weight: ${fontWeight.BT};
   text-align: center;
   cursor: pointer;
   color: #000;
@@ -62,8 +64,9 @@ export const QuestionBtn = styled.div`
   background: #202128;
   box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.07);
   border-radius: 100px;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: ${fontSize.BT};
+  line-height: ${fontLineHeight.BT};
+  font-weight: ${fontWeight.BT};
   text-align: center;
   cursor: pointer;
   color: #fff;

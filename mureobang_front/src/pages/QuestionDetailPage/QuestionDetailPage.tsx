@@ -45,9 +45,9 @@ const QuestionDetailPage = () => {
         {/* 답변 영역 */}
         <Typography fontSize={fontSize.H4} lineHeight={fontLineHeight.H4} fontWeight={fontWeight.H4} style={{margin: '24px 0 32px'}}>올라온 답변 💬</Typography>
         <AnswerFlex>
-          <AnswerBox></AnswerBox>
-          <AnswerBox></AnswerBox>
-          <AnswerBox></AnswerBox>
+          <AnswerBox answerID="1"/>
+          <AnswerBox answerID="2"/>
+          <AnswerBox answerID="3"/>
         </AnswerFlex>
       </MainContainer>
     </PageContainer>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {sizeManager} from "./mediaQueryStyles";
-import {IconButton, Pagination} from "@mui/material";
+import {Button, IconButton, Pagination} from "@mui/material";
 import {fontLineHeight, fontSize, fontWeight} from "@styles/fontStyles";
 
 //margin: 2vh calc((100vw - (${sizeManager.pcGlobalWidth} + 20px)) / 2);
@@ -37,8 +37,8 @@ interface departmentTagProps {
   bgColor: string;
 }
 // 학과 태그
-export const DepartmentTag = styled.div<departmentTagProps>`
-  width: 110px;
+export const DepartmentTag = styled.span<departmentTagProps>`
+  max-width: 110px;
   height: 32px;
   color: ${props => props.color};
   background-color: ${props => props.bgColor};
@@ -47,7 +47,7 @@ export const DepartmentTag = styled.div<departmentTagProps>`
   font-size: ${fontSize.BT};
   line-height: ${fontLineHeight.BT};
   font-weight: ${fontWeight.BT};
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
@@ -131,4 +131,25 @@ export const PostTag = styled.div<postTagProps>`
   justify-content: center;
   align-items: center;
   padding: 4px 16px;
+`
+
+// 칭찬 버튼
+export const ComplimentBtn = styled(Button)`
+  height: 30px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px !important;
+  border: 1px solid #000000 !important;
+  border-radius: 30px !important;
+  background-color: #fff !important;
+  font-size: ${fontSize.BT} !important;
+  line-height: ${fontLineHeight.BT} !important;
+  font-weight: ${fontWeight.BT} !important;
+  color: #000 !important;
+  
+  span {
+    color: #6590FF;
+    padding-left: 4px;
+  }
 `

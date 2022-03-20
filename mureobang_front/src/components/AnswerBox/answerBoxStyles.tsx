@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Button} from "@mui/material";
-import {fontLineHeight, fontSize, fontWeight} from "@styles/fontStyles";
+import {fontLineHeight, fontSize, fontWeight, Text1} from "@styles/fontStyles";
 import {IconBtn} from "@styles/frequentStyles";
 
 export const AnswerBoxContainer = styled.div`
@@ -10,7 +10,7 @@ export const AnswerBoxContainer = styled.div`
   background: #fff;
   border: 1px solid #DBDDE1;
   border-radius: 30px;
-  padding: 33px 40px 33px 233px;
+  padding: 33px 40px 24px 233px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -78,4 +78,37 @@ export const ThumbUpIconBtn = styled(IconBtn)`
   position: absolute !important;
   right: 40px;
   top: 33px;
+`
+
+export const NotOpenMainText = styled(Text1)`
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`
+
+export const ComplimentBtnFlex = styled.div`
+  display: flex;
+  gap: 8px;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  left: 233px;
+  bottom: 24px;
+`
+
+export const BottomArrowArea = styled.div`
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  img {
+    width: 57px;
+  }
 `

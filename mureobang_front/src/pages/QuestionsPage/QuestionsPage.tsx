@@ -43,7 +43,7 @@ const QuestionsPage = () => {
               필터
             </FilterBtn>
             <QuestionBtn>
-              나도 질문하기
+              🤔 나도 질문하기
             </QuestionBtn>
           </QuestionCheckBtnFlex>
         </QuestionCheckHeadFlex>

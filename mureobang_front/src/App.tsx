@@ -6,6 +6,7 @@ import PagesURL from "./PagesURL";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import NavBar from "./components/NavBar/NavBar";
 import {createTheme, ThemeProvider} from "@mui/material";
+import {ScrollToTop} from "@components/ScrollTop/ScrollTop";
 
 const theme = createTheme({
   typography: {
@@ -19,6 +20,7 @@ function App() {
       <GlobalStyles/>
       <ThemeProvider theme={theme}>
         <BrowserRouter>
+          <ScrollToTop/>
           <NavBar/>
           <Switch>
             {/*{PagesURL.map(route => (*/}
